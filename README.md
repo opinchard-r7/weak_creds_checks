@@ -43,8 +43,16 @@ $ ./r7_weak_creds.pl ssh usernames.txt passwords.txt realms.txt
 $ ls cmty*
 
 cmty-cifs-default-account-jdoe-password-Spring2019-mydomain.vck
+
 cmty-cifs-default-account-jdoe-password-Spring2019-mydomain.xml
+
 cmty-cifs-default-account-jdoe-password-Welcome2019-mydomain.vck
+
 cmty-cifs-default-account-jdoe-password-Welcome2019-mydomain.xml
+
 cmty-cifs-default-account-jdoe-password-password123-mydomain.vck
+
 cmty-cifs-default-account-jdoe-password-password123-mydomain.xml
+
+
+
