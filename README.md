@@ -58,25 +58,19 @@ cmty-cifs-default-account-jdoe-password-password123-mydomain.xml
 
 To deploy this vulnerability check into Nexpose, simply copy your .xml and .vck files file(s) into the following directory for the scan console and any attached scan engines:
 
+Linux:
+
 /opt/rapid7/nexpose/plugins/java/1/CustomScanner/1/
 
-and restart Nexpose. You should see something like the following message in the log:
+Windows:
 
-NSC  3/13/10 11:10 AM: Imported 1 new and 0 modified vulnerabilities in 22 seconds
+[nexpose-install-dir]/plugins/java/1/CustomScanner/1/
+    
+and run the console command "load content". Watch for errors on the console (look in nsc.log) when Nexpose content is being reloaded. If you made any mistakes, Nexpose will log some error messages when it compiles the new vulnerabilities. If everything was successful, you should see something like the following message in the log:
 
-Within the Nexpose console and scan engines command line interfaces new vulnerability checks and descriptions may be loaded without restarting the respective services. The 'load content' command initiates a background re-load of vulnerability information.
+2015-12-18T08:59:43 [INFO] Inserted 1 vulnerabilities.
 
-> load content
+...
 
-2018-01-03T11:29:21 [INFO] > load content
-
-2018-01-03T11:29:28 [INFO] Loading vulnerability and solution managers.
-
-2018-01-03T11:29:35 [INFO] [Started: 2018-01-03T16:29:28] [Duration: 0:00:07.102] Completed loading vulnerability and solution managers
-
-2018-01-03T11:29:35 [INFO] Loading vulnerability check manager.
-
-... content trimmed for this article ...
-
-2018-01-03T11:35:02 [INFO] Load Content command complete.
+2015-12-18T08:59:55 [INFO] Load Content command complete.
 
