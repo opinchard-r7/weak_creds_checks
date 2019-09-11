@@ -38,8 +38,10 @@ Supported Services include db2, tds, mysql, postgres, ssh, ftp, telnet, cifs and
 
 Running r7_weak_creds.pl will generate the new .vck and .xml file(s) within a directory corresponding to the service for the checks.
 
-$ ./r7_weak_creds.pl ssh usernames.txt passwords.txt realms.txt 
+$ ./r7_weak_creds.pl ssh usernames.txt passwords.txt realms.txt
+
 $ ls cmty*
+
 cmty-cifs-default-account-jdoe-password-Spring2019-mydomain.vck
 cmty-cifs-default-account-jdoe-password-Spring2019-mydomain.xml
 cmty-cifs-default-account-jdoe-password-Welcome2019-mydomain.vck
